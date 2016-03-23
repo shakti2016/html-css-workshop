@@ -1,0 +1,301 @@
+@import "variables.less";
+@import "mixins.less";
+
+body{
+  background-color: @bodyColor;
+  margin: 0px;
+}
+.wrapper{
+  width:870px;
+  margin:0 auto;
+  background-color:#fff;
+  padding:0 15px;
+}
+header{
+  background-color: #fff;
+}
+.fullWidth{
+  width:100%;
+  display:inline-block;
+  .logoWrap{
+    float:left;
+    width:30%;
+    margin-top:30px;
+  }
+  .halfWidth{
+    width:70%;
+    float:right;
+    img{
+      width:100%;
+    }
+  }
+}
+.contentWrap{
+  width:100%; 
+  display:inline-block;
+  clear:both;
+  .contentLeft{
+    width:70%; 
+    float:left;
+    article{
+      font-family: sans-serif;
+      font-size: 12px;
+      color: #585858;
+      text-align: justify;
+      margin-right:15px;
+      h2{
+        color:#df0101;
+        font-family:sans-serif;
+      }
+    }
+  }
+  .sidebar{
+    width:30%;
+    float:right;
+    margin-top:15px;
+    #search{
+      input{
+        border-color:red;
+      }
+    }
+    .title4{
+      background-color: #A9A9A9;
+      color: #fff;
+      font-size: 17px;
+      font-family: sans-serif;
+      padding: 8px 10px;
+      margin-bottom: 0px;
+    }
+    .sidebar-menu {
+      margin: 0 10px;
+      padding: 0px;
+      li{
+        margin: 0px;
+        padding: 6px 0px;
+        color: #919191;
+        font-family: sans-serif;
+        font-size: 15px;
+        border-bottom: 3px dotted #A9A9A9;
+      }
+    }
+  }
+}
+.imgWrap{
+  width:100%;
+  display:inline-block; 
+  clear:both;
+  margin:30px 0;
+  .col3{
+    width:33.33%;
+    float:left;
+    margin:0px;
+    text-align:center;
+    img{
+      border-radius:500%;
+      width:170px; 
+      height:170px;
+    }
+    figcaption {
+      font-family: sans-serif;
+      font-size: 14px;
+      color: #585858;
+      text-align: center;
+      margin-top:10px;
+      margin-bottom:15px;
+
+    }       
+  }
+ 
+}
+.footerWrap{
+  width:870px;
+  margin:0 auto;
+   
+}
+.footer {
+  clear: both;
+  display:inline-block;
+  padding: 20px 15px;
+  margin:0 -15px;
+  background-color:#222;
+  width: 100%;
+  section{
+    width:33.33%;
+    float:left;
+    padding:0;
+       
+  }
+  @media only screen and (min-width: 320px) and (max-width: 500px){      
+      float:none;
+      display:block;
+      text-align:center;
+      width:100%;
+      padding:20px 0;
+      margin:0
+     }    
+}
+.fmenu{
+  li{
+    margin-bottom:8px;
+  }
+}
+h3 {
+  margin:0;
+  color: #fff;
+  font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  list-style: none;
+}
+
+
+#search {
+  width: 122px;
+  height: 20px;
+   
+}
+#submit {
+  margin: 0 0 0 -6px;
+  height: 26px;
+   
+}
+
+input[type="button"]{
+  margin-top: 12px;
+  float: right;
+  width:100px;
+  height: 30px;
+  border: 1px solid #236B8E;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 16fffpx;
+  color: #fff;
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(top,  #1e5799 11%, #2989d8 100%, #207cca 100%, #7db9e8 100%, #207cca 100%, #2989d8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #1e5799 11%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#207cca 100%,#2989d8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #1e5799 11%,#2989d8 100%,#207cca 100%,#7db9e8 100%,#207cca 100%,#2989d8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#2989d8',GradientType=0 ); /* IE6-9 */
+  
+}
+
+.sidebar-right {
+  float: left;
+  margin-top: 15px;
+  .title4{
+    background-color: #A9A9A9;
+    color: #fff;
+    font-size: 19px;
+    font-family: sans-serif;
+    padding: 4px;
+    margin-bottom: 0px;
+  }
+}
+
+ul li {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.contactus-section input[type="text"]{
+  width:188px;
+  background-color: #ddd;
+  color: #686868;
+  border: 1px solid #eee;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 6px;
+  margin: 0px 0px 2px 0px;
+}
+footer section{
+  float: left;
+  color: #919191;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+section{
+  padding:0px 10px 0px 10px;
+}
+
+
+
+
+::-webkit-input-placeholder {
+   color: @placeholderColor;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: @placeholderColor;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: @placeholderColor;
+}
+
+:-ms-input-placeholder {
+   color: @placeholderColor;
+}
+.disclaimertext {
+  clear:both;
+  width:100%;
+  color: #919191;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: center;
+  p{
+    padding: 2px 0px;
+    margin: 0px;
+  }
+}
+
+
+  /* ICON CSS */
+  @font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?uzepzs');
+    src:    url('../fonts/icomoon.eot?uzepzs#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?uzepzs') format('truetype'),
+        url('../fonts/icomoon.woff?uzepzs') format('woff'),
+        url('../fonts/icomoon.svg?uzepzs#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-size: 1.5em;
+    color:#919191;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrows_plus:before {
+    content: "\e900";
+}
+.icon-arrows_question:before {
+    content: "\e901";
+}
+.icon-arrows_rotate_anti_dashed:before {
+    content: "\e902";
+}
+
+
+
+
